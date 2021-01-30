@@ -1,0 +1,33 @@
+
+/* 
+    Created on : Jan 30, 2021, 2:31:01 PM
+    Author     : Nate Hepker
+*/
+
+body{
+    background-color: aliceblue;
+}
+.topSection{
+    height: 3em;
+    background-color: blue;
+    color: white;
+}
+.boxed{
+    border-style: solid;
+    border-color: black;
+    margin: 1em 0em;
+}
+.bottomForm p{
+    margin: 1em 1em 1em 1em;
+}
+footer{
+    height: 2em;
+    text-align: center;
+    font-weight: lighter;
+    background-color: blue;
+    color: white;
+}
+footer p{
+    margin: auto;
+}
+

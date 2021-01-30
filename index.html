@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+    Author: Nate Hepker
 -->
-<html>
+<html lang="en-us">
     <head>
         <title>HTML Assignment</title>
+        <link rel="stylesheet" href="./src/css/site.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>My HTML Assignment</div>
+        <!-- The form's title bar above the form -->
+        <div class="topSection">
+            <h1>A Form</h1>
+        </div>
+        <!-- Start of the form -->
+        <form>
+            <!-- The top of the form -->
+            <div id="formHead">
+                <h2>Form Section</h2>
+            </div>
+            <!-- labels and inputs for Email and Password -->
+            <div>
+                <label>Email<br/><input type="email"></label><br/>
+                <label>Password<br/><input type="password"></label><br/>
+            </div>
+            <br/>
+            <!-- The label and drop down box fro languages -->
+            <div id="langDropDown">
+                <label>
+                    Language
+                    <select>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <option value="polish">Polish</option>
+                        <option value="russian">Russian</option>
+                    </select>
+                </label>
+            </div>
+            <!-- The enclosed fieldset box for the color choice radio buttons -->
+            <fieldset class="boxed" id="colorChoice">
+                <legend>Color Choice</legend>
+                <label>Red<input type="radio" name="colorChoice"> </label>
+                <label>Blue<input type="radio" name="colorChoice"> </label>
+                <label>Yellow<input type="radio" name="colorChoice"> </label>
+            </fieldset>
+            <br>
+            <!-- The buttons for Submit and Reset -->
+            <div class="buttons">
+                <button>Submit</button>
+                <button>Reset</button>
+            </div>
+            <!-- The bottom half of the form with an image and hyperlink-->
+            <div class="bottomForm">
+                <h2>Other Section</h2>
+                <img src="https://placekitten.com/281/200" alt="photo of a cute kitten">
+                <p>This is a link to a more stylish website: 
+                    <a href="https://kirkwood.edu/">More Stylish Site</a>
+                </p>
+                <p>(The above link just takes you to the Kirkwood website)</p>
+            </div>
+        </form>
+        <!-- The footer with copyright that gives the latest year. -->
+        <footer>
+            <p>Copyright<span>&#169;</span><script>document.write(new Date().getFullYear());</script></p>
+        </footer>
     </body>
 </html>
